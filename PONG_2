@@ -1,0 +1,45 @@
+import turtle
+
+sc = turtle.Screen()
+sc.setup(width = 1000 , height = 800)
+
+#balle
+
+balle = turtle.Turtle()
+balle.shape("circle")
+
+#raquette 1
+r1 = turtle.Turtle()
+r1.shape("square")
+r1.setheading(90)
+r1.shapesize(1,5)
+r1.penup()
+r1.goto(-450, 0)
+
+#raquette 2
+r2 = turtle.Turtle()
+r2.shape("square")
+r2.setheading(90)
+r2.shapesize(1,5)
+r2.penup()
+r2.goto(450, 0)
+
+#Mouvement
+
+def r1_up():
+    r1.fd(10)
+    
+def r2_up():
+    r2.fd(10)
+
+def r1_down():
+    r1.bk(10)
+    
+def r2_down():
+    r2.bk(10)
+    
+sc.listen()
+sc.onkey(r1_up, "w")
+sc.onkey(r2_up, "Up")
+sc.onkey(r1_down, "s")
+sc.onkey(r1_down, "Down")
