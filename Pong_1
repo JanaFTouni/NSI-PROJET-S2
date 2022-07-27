@@ -1,0 +1,21 @@
+import turtle
+
+sc = turtle.Screen()
+sc.setup(width = 1000 , height = 800)
+
+#balle
+
+balle = turtle.Turtle()
+balle.shape("circle")
+
+#raquette 1
+r1 = turtle.Turtle()
+r1.shape("square")
+r1.penup()
+r1.goto(-450, 0)
+
+#raquette 2
+r2 = turtle.Turtle()
+r2.shape("square")
+r2.penup()
+r2.goto(450, 0)
