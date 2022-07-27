@@ -1,0 +1,31 @@
+#Mouvement Balle
+xballe = random.choice([-500, 500])
+
+yballe = 0
+while yballe == 0:
+    yballe = random.randint(-400, 400)
+
+def debut():
+    balle.goto(xballe, yballe)
+
+sc.listen()
+sc.onkey(debut, "space")
+#Mouvement Raquette
+
+def r1_up():
+    r1.fd(10)
+    
+def r2_up():
+    r2.fd(10)
+
+def r1_down():
+    r1.bk(10)
+    
+def r2_down():
+    r2.bk(10)
+
+sc.listen()
+sc.onkeypress(r1_up, "w")
+sc.onkeypress(r2_up, "Up")
+sc.onkeypress(r1_down, "s")
+sc.onkeypress(r1_down, "Down")
