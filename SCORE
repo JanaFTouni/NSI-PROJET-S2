@@ -1,0 +1,31 @@
+import turtle
+
+
+sc = turtle.Screen()
+sc.setup(width = 1000 , height = 800)
+sc.bgcolor("black")
+sc.title("Pong")
+
+    
+score_r1 = 0    
+score_r2 = 0
+    
+s1 = turtle.Turtle()
+s1.speed(0)
+s1.penup()
+s1.ht()
+s1.setx(-250)
+s1.sety(200)
+s1.pendown()
+s1.color("white")
+s1.write(score_r1, move=False, align='left', font=('Arial', 50, 'normal'))
+
+s2 = turtle.Turtle()
+s2.speed(0)
+s2.penup()
+s2.ht()
+s2.setx(250)
+s2.sety(200)
+s2.pendown()
+s2.color("white")
+s2.write(score_r1, move=False, align='left', font=('Arial', 50, 'normal'))
