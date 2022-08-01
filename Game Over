@@ -1,0 +1,22 @@
+import turtle
+
+
+
+sc = turtle.Screen()
+sc.setup(width = 1000 , height = 800)
+sc.bgcolor("black")
+sc.title("Pong")
+
+over = turtle.Turtle()
+over.speed(0)
+over.penup()
+over.ht()
+over.setx(-100)
+over.sety(0)
+over.pendown()
+over.setx(-180)
+over.sety(0)
+over.pendown()
+over.color("white")
+over.write("Player 1 Won !!!", move=False, align='left', font=('Spectral', 50, 'normal'))
+#over.write("Player 2 Won !!!", move=False, align='left', font=('Spectral', 50, 'normal'))
