@@ -102,7 +102,7 @@ def main():
     limite.goto(-470, -370)
     limite.speed(0)
     
-    #BALE:
+    #BALLE:
     
     balle = turtle.Turtle()
     balle.shape("circle")
