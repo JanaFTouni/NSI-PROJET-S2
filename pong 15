@@ -113,8 +113,8 @@ def main():
     
     #MOUVEMENT :
     
-    move_x = 5
-    move_y = 5    
+    move_x = 1
+    move_y = 1    
     
     #RAQUETTE 1 :
     
@@ -175,7 +175,7 @@ def main():
 
     while True:
         sc.update()
-        
+        sc.tracer(0)
         
         x = balle.xcor() + move_x
         y = balle.ycor() + move_y
